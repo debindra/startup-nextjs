@@ -108,7 +108,7 @@ const Footer = () => {
                       Blog{" "}
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="/"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
@@ -116,7 +116,7 @@ const Footer = () => {
                       {" "}
                       Pricing{" "}
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="/"
@@ -154,7 +154,7 @@ const Footer = () => {
                       Privacy Policy{" "}
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="/"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
@@ -162,7 +162,7 @@ const Footer = () => {
                       {" "}
                       Refund Policy{" "}
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
