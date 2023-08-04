@@ -1,4 +1,4 @@
-type SingleBLog = {
+export type SingleBLog = {
     title: string,
     user: object,
     url: string,
