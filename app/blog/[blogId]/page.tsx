@@ -15,7 +15,7 @@ async function getSingleBlog(blogId){
 const BlogDetailsPage = ({params}) => {
     const blogId = params.blogId;
 
-    const [blog, setBlog] = useState<SingleBLog>({});
+    const [blog, setBlog] = useState<SingleBLog | null>(null);
     // const [blog, setBlog] = useState({});
 
     useEffect(() => {
