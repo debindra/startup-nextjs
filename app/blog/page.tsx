@@ -1,8 +1,26 @@
+'use client'
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { useEffect, useState } from "react";
+import {API_BASE_URL} from "@/utils/constants"
+
+async function getPostData(){
+  const res = await fetch( `${API_BASE_URL}/blog/publish`, {mode:'cors'})
+  return res.json();
+}
 
 const Blog = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const loadData = async () => {
+      const data = await getPostData();
+      setData(data.data);
+    }
+    loadData();
+
+  }, []);
+
   return (
     <>
       <Breadcrumb
@@ -13,7 +31,7 @@ const Blog = () => {
       <section className="pt-[120px] pb-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
-            {blogData.map((blog) => (
+            {data.map((blog) => (
               <div
                 key={blog.id}
                 className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
