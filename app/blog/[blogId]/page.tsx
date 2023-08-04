@@ -4,6 +4,7 @@ import TagButton from "@/components/Blog/TagButton";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import {API_BASE_URL} from "@/utils/constants"
+import { SingleBLog } from "@/types/blogfull";
 
 async function getSingleBlog(blogId){
 
@@ -14,7 +15,8 @@ async function getSingleBlog(blogId){
 const BlogDetailsPage = ({params}) => {
     const blogId = params.blogId;
 
-    const [blog, setBlog] = useState({});
+    const [blog, setBlog] = useState<SingleBLog>({});
+    // const [blog, setBlog] = useState({});
 
     useEffect(() => {
       const loadData = async () => {
@@ -35,7 +37,7 @@ const BlogDetailsPage = ({params}) => {
                 <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
                   {/* 10 amazing sites to download stock photos & digital assets for
                   free */}
-                  {blog.title}
+                  {blog?.title}
                 </h2>
                 <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                   <div className="flex flex-wrap items-center">
