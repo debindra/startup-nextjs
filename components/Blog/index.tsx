@@ -6,7 +6,6 @@ import SingleBlog from "./SingleBlog";
 import {API_BASE_URL} from "@/utils/constants"
 
 async function getBlog(){
-  const baseUrl = process.env.NEXT_API_URL;
   const res = await fetch( `${API_BASE_URL}/blog/publish`, {mode:'cors'})
   return res.json();
 }
