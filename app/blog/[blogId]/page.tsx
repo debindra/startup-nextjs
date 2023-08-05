@@ -8,7 +8,7 @@ import { SingleBLog } from "@/types/blogfull";
 
 async function getSingleBlog(blogId){
 
-    const res = await fetch( `${API_BASE_URL}/blog/publish/${blogId}`, {mode:'no-cors'})
+    const res = await fetch( `${API_BASE_URL}/blog/publish/${blogId}`, {mode:'cors'})
     return await res.json();
   }
 
