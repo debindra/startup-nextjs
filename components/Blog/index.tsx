@@ -38,7 +38,7 @@ const Blog = () => {
           {data.map((blog) => (
             <div key={blog.id} className="w-full">
               {/* <p className="text-white-600">{blog.title}</p> */}
-              <SingleBlog blog={blog} />
+              <SingleBlog blog={blog} key={blog.id} />
             </div>
           ))}
         </div>
