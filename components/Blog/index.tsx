@@ -6,8 +6,8 @@ import SingleBlog from "./SingleBlog";
 import {API_BASE_URL} from "@/utils/constants"
 
 async function getBlog(){
-  const res = await fetch( `${API_BASE_URL}/blog/publish`, {mode:'cors'})
-  return res.json();
+  const res = await fetch(`https://app.scansphere.org/api/blog`, {mode:'cors'})
+  return await res.json();
 }
 
 const Blog = () => {
@@ -16,6 +16,8 @@ const Blog = () => {
   
     const loadData = async () => {
       const data = await getBlog();
+      console.log("Loading data...")
+      console.log(data.data)
       setData(data.data);
     }
     loadData();

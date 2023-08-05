@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 import {API_BASE_URL} from "@/utils/constants"
 
 async function getPostData(){
-  const res = await fetch( `${API_BASE_URL}/blog/publish`, {mode:'cors'})
-  return res.json();
+  const res = await fetch( `${API_BASE_URL}/blog/publish`, {mode:'no-cors'})
+  return await res.json();
 }
 
 const Blog = () => {
