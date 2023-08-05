@@ -6,7 +6,7 @@ import SingleBlog from "./SingleBlog";
 import {API_BASE_URL} from "@/utils/constants"
 
 async function getBlog(){
-  const res = await fetch(`https://app.scansphere.org/api/blog`, {mode:'cors'})
+  const res = await fetch(`https://app.scansphere.org/api/blog/publish`, {mode:'cors'})
   return await res.json();
 }
 
