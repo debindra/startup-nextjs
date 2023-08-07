@@ -71,7 +71,7 @@ const BlogDetailsPage = ({params}) => {
                 </div>
                 <div>
                  
-                  <div className="mb-10 w-full overflow-hidden rounded">
+                 {blog?.url &&  <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                       <Image
                         src={blog?.url}
@@ -81,9 +81,12 @@ const BlogDetailsPage = ({params}) => {
                       />
                     </div>
                   </div>
+              }
+                  
                   <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
                   dangerouslySetInnerHTML={{ __html:  blog?.content }}
                   >
+                 
                     
                   </p>
                   
