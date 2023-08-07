@@ -81,8 +81,10 @@ const BlogDetailsPage = ({params}) => {
                       />
                     </div>
                   </div>
-                  <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    {blog?.content}
+                  <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html:  blog?.content }}
+                  >
+                    
                   </p>
                   
                  
