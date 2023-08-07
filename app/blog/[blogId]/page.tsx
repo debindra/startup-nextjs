@@ -27,6 +27,8 @@ const BlogDetailsPage = ({params}) => {
   
     }, []);
 
+    if(!blog) return <>Loading ... </>
+
   return (
     <>
       <section className="pt-[150px] pb-[120px]">
