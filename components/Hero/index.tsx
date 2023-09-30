@@ -26,7 +26,7 @@ const Hero = () => {
 
  I later completed a Radiodiagnosis residency on a scholarship and returned to a remote hospital as a radiologist, receiving many requests for expert opinions.
 
- In Nepal's underprivileged areas, lacking advanced teleradiology services, I aim to connect underserved communities with specialized medical care.
+ In Nepal&apos;s underprivileged areas, lacking advanced teleradiology services, I aim to connect underserved communities with specialized medical care.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                  
