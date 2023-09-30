@@ -2,7 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Hero = () => {
+const intro = `After earning a medical scholarship, I began my career as a medical officer in eastern Nepal, facing challenges in interpreting diagnostic images. Access to specialists was limited.
 
+I later completed a Radiodiagnosis residency on a scholarship and returned to a remote hospital as a radiologist, receiving many requests for expert opinions.
+
+In Nepal's underprivileged areas, lacking advanced teleradiology services, I aim to connect underserved communities with specialized medical care.`
   return (
     <>
       <section
@@ -22,11 +26,7 @@ const Hero = () => {
                 Smarter Radiology <br/> <mark className="bg-primary text-white">Better  Patient Care </mark>
                 </h1>
                 <p className="mb-12 text-base font-bold !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                After earning a medical scholarship, I began my career as a medical officer in eastern Nepal, facing challenges in interpreting diagnostic images. Access to specialists was limited.
-
- I later completed a Radiodiagnosis residency on a scholarship and returned to a remote hospital as a radiologist, receiving many requests for expert opinions.
-
- In Nepal&apos;s underprivileged areas, lacking advanced teleradiology services, I aim to connect underserved communities with specialized medical care.
+                {intro}
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                  
