@@ -1,7 +1,6 @@
 'use client'
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
-// import featuresData from "./featuresData";
 import { useEffect, useState } from "react";
 import {API_BASE_URL} from "@/utils/constants"
 
