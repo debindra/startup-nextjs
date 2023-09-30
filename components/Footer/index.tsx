@@ -35,8 +35,7 @@ const Footer = () => {
 
              
                 <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                Providing better patient care through smart radiology and great doctors.
                 </p>
                 {/* <div className="flex items-center">
                   <a

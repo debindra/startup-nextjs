@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+        className="relative z-10 overflow-hidden pt-[120px] pb-16 "
       >
         <div className="container">
           <div className="grid grid-cols-2 gap-1">
@@ -21,8 +21,12 @@ const Hero = () => {
                 <h1 className="mb-5 text-2xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                 Smarter Radiology <br/> <mark className="bg-primary text-white">Better  Patient Care </mark>
                 </h1>
-                <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                your introduction
+                <p className="mb-12 text-base font-bold !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+                After earning a medical scholarship, I began my career as a medical officer in eastern Nepal, facing challenges in interpreting diagnostic images. Access to specialists was limited.
+
+ I later completed a Radiodiagnosis residency on a scholarship and returned to a remote hospital as a radiologist, receiving many requests for expert opinions.
+
+ In Nepal's underprivileged areas, lacking advanced teleradiology services, I aim to connect underserved communities with specialized medical care.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                  
@@ -30,18 +34,18 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="ml-20">
             <Image 
             src={`/images/hero/shailendra.jpeg`}
             width={300}
             height={300}
             alt="Shailndra Katwal"
-            className="rounded-full w-96 h-96"
+            className="rounded-full w-96 h-96 opacity-70"
             />
           </div>
           </div>
         </div>
-        <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
+        {/* <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
             height="556"
@@ -178,8 +182,8 @@ const Hero = () => {
               </linearGradient>
             </defs>
           </svg>
-        </div>
-        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
+        </div> */}
+        <div className="absolute bottom-0 right-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"
             height="201"

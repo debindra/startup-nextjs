@@ -16,8 +16,6 @@ const Blog = () => {
   
     const loadData = async () => {
       const data = await getBlog();
-      console.log("Loading data...")
-      console.log(data.data)
       setData(data.data);
     }
     loadData();
@@ -30,7 +28,7 @@ const Blog = () => {
       <div className="container">
         <SectionTitle
           title="Our Latest Blogs"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph=""
           center
         />
 
